@@ -1281,11 +1281,11 @@ export function FileUpload({ onImportComplete, onViewPortfolio }: FileUploadProp
     <div className="space-y-6 page-container">
       {/* File Upload Area */}
       <Card className="bg-[var(--bg-card)] border-[var(--border-subtle)] shadow-sm min-h-[400px]">
-        <CardHeader>
-          <CardTitle className="text-2xl">Import Portfolio Data</CardTitle>
-          <CardDescription className="text-base">
-            Upload a CSV file containing your trading transactions
-          </CardDescription>
+        <CardHeader style={{ paddingTop: '24px', paddingBottom: '24px', paddingLeft: '28px', paddingRight: '16px' }}>
+          <div className="flex flex-col">
+            <CardTitle>Import Portfolio Data</CardTitle>
+            <CardDescription>Upload a CSV file containing your trading transactions</CardDescription>
+          </div>
         </CardHeader>
         <CardContent className="h-full flex flex-col justify-center p-6">
           <div
