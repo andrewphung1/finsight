@@ -1,0 +1,194 @@
+{
+  "timestamp": "2025-08-24T23:05:30.997Z",
+  "storeState": {
+    "portfolios": {
+      "import_123": {
+        "id": "import_123",
+        "name": "Test Portfolio",
+        "status": "ready",
+        "equitySeries": [
+          {
+            "ts": 1704067200000,
+            "value": 10000
+          },
+          {
+            "ts": 1704153600000,
+            "value": 10100
+          },
+          {
+            "ts": 1704240000000,
+            "value": 10200
+          }
+        ],
+        "returnSeries": [
+          {
+            "ts": 1704067200000,
+            "portfolioReturn": 0,
+            "sp500Return": 0
+          },
+          {
+            "ts": 1704153600000,
+            "portfolioReturn": 1,
+            "sp500Return": 0.8
+          },
+          {
+            "ts": 1704240000000,
+            "portfolioReturn": 2,
+            "sp500Return": 1.6
+          }
+        ],
+        "holdings": [
+          {
+            "ticker": "AAPL",
+            "shares": 50,
+            "marketValue": 8750,
+            "costBasis": 8000
+          },
+          {
+            "ticker": "MSFT",
+            "shares": 30,
+            "marketValue": 9000,
+            "costBasis": 9000
+          }
+        ],
+        "assetAllocation": [
+          {
+            "ticker": "AAPL",
+            "name": "Apple Inc.",
+            "value": 8750,
+            "weight": 49.3,
+            "sector": "Technology"
+          },
+          {
+            "ticker": "MSFT",
+            "name": "Microsoft Corp.",
+            "value": 9000,
+            "weight": 50.7,
+            "sector": "Technology"
+          }
+        ],
+        "metrics": {
+          "totalValue": 17750,
+          "totalCost": 17000,
+          "totalGain": 750,
+          "totalGainPercent": 4.41,
+          "ytdReturn": 4.41
+        },
+        "valuedThrough": "2024-01-03",
+        "bridgedTickers": [],
+        "missingPrices": []
+      }
+    },
+    "activePortfolioId": "import_123",
+    "activePortfolioReady": true,
+    "importInProgress": false
+  },
+  "activeData": {
+    "positions": [
+      {
+        "ticker": "AAPL",
+        "shares": 50,
+        "marketValue": 8750,
+        "costBasis": 8000
+      },
+      {
+        "ticker": "MSFT",
+        "shares": 30,
+        "marketValue": 9000,
+        "costBasis": 9000
+      }
+    ],
+    "assetAllocation": [
+      {
+        "ticker": "AAPL",
+        "name": "Apple Inc.",
+        "value": 8750,
+        "weight": 49.3,
+        "sector": "Technology"
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft Corp.",
+        "value": 9000,
+        "weight": 50.7,
+        "sector": "Technology"
+      }
+    ],
+    "performanceSeries": {
+      "value": [
+        {
+          "ts": 1704067200000,
+          "value": 10000
+        },
+        {
+          "ts": 1704153600000,
+          "value": 10100
+        },
+        {
+          "ts": 1704240000000,
+          "value": 10200
+        }
+      ],
+      "return": [
+        {
+          "ts": 1704067200000,
+          "portfolioReturn": 0,
+          "sp500Return": 0
+        },
+        {
+          "ts": 1704153600000,
+          "portfolioReturn": 1,
+          "sp500Return": 0.8
+        },
+        {
+          "ts": 1704240000000,
+          "portfolioReturn": 2,
+          "sp500Return": 1.6
+        }
+      ]
+    },
+    "valuedThrough": "2024-01-03",
+    "status": {
+      "bridgedTickers": [],
+      "missingPrices": []
+    },
+    "metrics": {
+      "totalValue": 17750,
+      "totalCost": 17000,
+      "totalGain": 750,
+      "totalGainPercent": 4.41,
+      "ytdReturn": 4.41
+    }
+  },
+  "chartData": {
+    "valueData": [
+      {
+        "date": "2024-01-01",
+        "value": 10000
+      },
+      {
+        "date": "2024-01-02",
+        "value": 10100
+      },
+      {
+        "date": "2024-01-03",
+        "value": 10200
+      }
+    ],
+    "returnData": [
+      {
+        "date": "2024-01-01",
+        "value": 0
+      },
+      {
+        "date": "2024-01-02",
+        "value": 1
+      },
+      {
+        "date": "2024-01-03",
+        "value": 2
+      }
+    ]
+  },
+  "status": "PASS"
+}

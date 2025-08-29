@@ -1,0 +1,6 @@
+Date,Ticker,Type,Quantity,Price,Fees,Notes
+2024-01-15,AAPL,BUY,100,150.00,9.99,Initial purchase
+2024-02-20,AAPL,BUY,50,160.00,9.99,Additional shares
+2024-03-15,MSFT,BUY,75,300.00,9.99,Microsoft purchase
+2024-04-10,AAPL,SELL,25,170.00,9.99,Partial sale
+2024-05-01,GOOGL,BUY,25,400.00,9.99,Google purchase

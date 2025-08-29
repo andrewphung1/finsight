@@ -1,0 +1,375 @@
+{
+  "timestamp": "2025-08-24T22:53:51.412Z",
+  "equitySeries": [
+    {
+      "ts": 1705276800000,
+      "value": 15009.99
+    },
+    {
+      "ts": 1708387200000,
+      "value": 30019.98
+    },
+    {
+      "ts": 1710028800000,
+      "value": 35029.97
+    },
+    {
+      "ts": 1713139200000,
+      "value": 26019.98
+    },
+    {
+      "ts": 1716163200000,
+      "value": 41029.97
+    },
+    {
+      "ts": 1717977600000,
+      "value": 49039.96
+    },
+    {
+      "ts": 1721001600000,
+      "value": 47529.97
+    },
+    {
+      "ts": 1755993600000,
+      "value": 47529.97
+    }
+  ],
+  "chartData": [
+    {
+      "date": "2024-01-15",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "date": "2024-02-20",
+      "value": 30019.98,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "date": "2024-03-10",
+      "value": 35029.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "date": "2024-04-15",
+      "value": 26019.98,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "date": "2024-05-20",
+      "value": 41029.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "date": "2024-06-10",
+      "value": 49039.96,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "date": "2024-07-15",
+      "value": 47529.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "date": "2025-08-24",
+      "value": 47529.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    }
+  ],
+  "timestampData": [
+    {
+      "ts": 1705276800000,
+      "originalDate": "2024-01-15",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1708387200000,
+      "originalDate": "2024-02-20",
+      "value": 30019.98,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1710028800000,
+      "originalDate": "2024-03-10",
+      "value": 35029.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1713139200000,
+      "originalDate": "2024-04-15",
+      "value": 26019.98,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1716163200000,
+      "originalDate": "2024-05-20",
+      "value": 41029.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1717977600000,
+      "originalDate": "2024-06-10",
+      "value": 49039.96,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1721001600000,
+      "originalDate": "2024-07-15",
+      "value": 47529.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755993600000,
+      "originalDate": "2025-08-24",
+      "value": 47529.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    }
+  ],
+  "filteredData": [
+    {
+      "ts": 1755993600000,
+      "originalDate": "2025-08-24",
+      "value": 47529.97,
+      "return": 0,
+      "cumulativeReturn": 0
+    }
+  ],
+  "dailySeries": [
+    {
+      "ts": 1753484031411,
+      "originalDate": "2025-07-25",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1753570431411,
+      "originalDate": "2025-07-26",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1753656831411,
+      "originalDate": "2025-07-27",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1753743231411,
+      "originalDate": "2025-07-28",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1753829631411,
+      "originalDate": "2025-07-29",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1753916031411,
+      "originalDate": "2025-07-30",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754002431411,
+      "originalDate": "2025-07-31",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754088831411,
+      "originalDate": "2025-08-01",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754175231411,
+      "originalDate": "2025-08-02",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754261631411,
+      "originalDate": "2025-08-03",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754348031411,
+      "originalDate": "2025-08-04",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754434431411,
+      "originalDate": "2025-08-05",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754520831411,
+      "originalDate": "2025-08-06",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754607231411,
+      "originalDate": "2025-08-07",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754693631411,
+      "originalDate": "2025-08-08",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754780031411,
+      "originalDate": "2025-08-09",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754866431411,
+      "originalDate": "2025-08-10",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1754952831411,
+      "originalDate": "2025-08-11",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755039231411,
+      "originalDate": "2025-08-12",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755125631411,
+      "originalDate": "2025-08-13",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755212031411,
+      "originalDate": "2025-08-14",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755298431411,
+      "originalDate": "2025-08-15",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755384831411,
+      "originalDate": "2025-08-16",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755471231411,
+      "originalDate": "2025-08-17",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755557631411,
+      "originalDate": "2025-08-18",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755644031411,
+      "originalDate": "2025-08-19",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755730431411,
+      "originalDate": "2025-08-20",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755816831411,
+      "originalDate": "2025-08-21",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755903231411,
+      "originalDate": "2025-08-22",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1755989631411,
+      "originalDate": "2025-08-23",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    },
+    {
+      "ts": 1756076031411,
+      "originalDate": "2025-08-24",
+      "value": 15009.99,
+      "return": 0,
+      "cumulativeReturn": 0
+    }
+  ],
+  "issues": [],
+  "status": "PASS"
+}

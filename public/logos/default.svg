@@ -1,0 +1,18 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .default-bg { fill: #6B7280; }
+      .default-text { fill: white; }
+      @media (prefers-color-scheme: dark) {
+        .default-bg { fill: #4B5563; }
+        .default-text { fill: #E5E7EB; }
+      }
+      [data-theme="dark"] .default-bg { fill: #4B5563; }
+      [data-theme="dark"] .default-text { fill: #E5E7EB; }
+    </style>
+  </defs>
+  <rect width="48" height="48" rx="8" class="default-bg"/>
+  <path d="M16 16H32V20H16V16Z" class="default-text"/>
+  <path d="M16 22H28V26H16V22Z" class="default-text"/>
+  <path d="M16 28H24V32H16V28Z" class="default-text"/>
+</svg>

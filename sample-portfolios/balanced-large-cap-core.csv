@@ -1,0 +1,19 @@
+ticker,type,date,quantity,price,fees,notes
+AAPL,BUY,2022-01-15,15,150.00,0,Sample portfolio - Balanced Large-Cap Core
+MSFT,BUY,2022-02-15,15,200.00,0,Sample portfolio - Balanced Large-Cap Core
+GOOGL,BUY,2022-03-15,10,135.00,0,Sample portfolio - Balanced Large-Cap Core
+JPM,BUY,2022-04-15,10,145.00,0,Sample portfolio - Balanced Large-Cap Core
+JNJ,BUY,2022-05-15,10,160.00,0,Sample portfolio - Balanced Large-Cap Core
+V,BUY,2022-06-15,10,235.00,0,Sample portfolio - Balanced Large-Cap Core
+HD,BUY,2022-07-15,10,300.00,0,Sample portfolio - Balanced Large-Cap Core
+UNH,BUY,2022-08-15,10,475.00,0,Sample portfolio - Balanced Large-Cap Core
+MA,BUY,2022-09-15,10,375.00,0,Sample portfolio - Balanced Large-Cap Core
+AAPL,BUY,2022-10-15,2,165.00,0,Additional position - Balanced Large-Cap Core
+MSFT,BUY,2022-11-15,2,220.00,0,Additional position - Balanced Large-Cap Core
+GOOGL,BUY,2022-12-15,1,140.00,0,Additional position - Balanced Large-Cap Core
+JPM,BUY,2023-01-15,1,155.00,0,Additional position - Balanced Large-Cap Core
+JNJ,BUY,2023-02-15,1,165.00,0,Additional position - Balanced Large-Cap Core
+V,BUY,2023-03-15,1,245.00,0,Additional position - Balanced Large-Cap Core
+HD,BUY,2023-04-15,1,310.00,0,Additional position - Balanced Large-Cap Core
+UNH,BUY,2023-05-15,1,485.00,0,Additional position - Balanced Large-Cap Core
+MA,BUY,2023-06-15,1,385.00,0,Additional position - Balanced Large-Cap Core

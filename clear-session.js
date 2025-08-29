@@ -1,0 +1,1 @@
+console.log('Clearing session storage...'); Object.keys(sessionStorage).forEach(key => { if (key.startsWith('import-session-')) { console.log('Removing:', key); sessionStorage.removeItem(key); } }); console.log('Session storage cleared');

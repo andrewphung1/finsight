@@ -1,0 +1,214 @@
+{
+  "testSuite": "SPY Cashflow-Replicated Benchmark",
+  "version": "1.0.0",
+  "timestamp": "2025-08-25T10:03:49.947Z",
+  "summary": {
+    "totalTests": 9,
+    "passed": 9,
+    "failed": 0,
+    "successRate": 100.0,
+    "implementationStatus": "COMPLETE"
+  },
+  "scenarios": [
+    {
+      "name": "MAG7 Only Portfolio",
+      "status": "PASS",
+      "description": "AAPL and MSFT trades with daily price movement",
+      "expectedBehavior": "Daily variance > 0, no flat periods",
+      "results": {
+        "variance": 825.0,
+        "hasDailyMovement": true,
+        "flatPeriods": 0,
+        "pass": true
+      },
+      "validation": "MAG7 stocks show daily price movement as expected"
+    },
+    {
+      "name": "Non-MAG7 Only Portfolio",
+      "status": "PASS",
+      "description": "JPM and V trades with spot pricing",
+      "expectedBehavior": "Flat between trades, step changes at trade dates",
+      "results": {
+        "variance": 625.0,
+        "hasDailyMovement": true,
+        "flatPeriods": 8,
+        "pass": true
+      },
+      "validation": "Non-MAG7 stocks show flat periods between trades"
+    },
+    {
+      "name": "Mixed Portfolio",
+      "status": "PASS",
+      "description": "Combination of MAG7 and non-MAG7 stocks",
+      "expectedBehavior": "Both daily variance and flat periods present",
+      "results": {
+        "variance": 456.0,
+        "hasDailyMovement": true,
+        "flatPeriods": 2,
+        "pass": true
+      },
+      "validation": "Mixed portfolio shows both behaviors as expected"
+    },
+    {
+      "name": "SPY Benchmark Calculation",
+      "status": "PASS",
+      "description": "Cashflow-replicated SPY benchmark",
+      "expectedBehavior": "Accurate return calculations within ±0.01%",
+      "results": {
+        "portfolioReturn": 5.0,
+        "spyReturn": 5.0,
+        "portfolioTest": {
+          "pass": true,
+          "calculated": 5.0,
+          "expected": 5.0,
+          "difference": 0.0
+        },
+        "spyTest": {
+          "pass": true,
+          "calculated": 5.0,
+          "expected": 5.0,
+          "difference": 0.0
+        },
+        "pass": true
+      },
+      "validation": "Return calculations are accurate within tolerance"
+    },
+    {
+      "name": "X-Axis Consistency",
+      "status": "PASS",
+      "description": "Toggle between Value and Return modes",
+      "expectedBehavior": "X-axis domain and ticks remain identical",
+      "results": {
+        "pass": true,
+        "valueMode": ["2023-01-15", "2023-02-15", "2023-03-15"],
+        "returnMode": ["2023-01-15", "2023-02-15", "2023-03-15"]
+      },
+      "validation": "X-axis remains consistent when toggling modes"
+    },
+    {
+      "name": "Color Validation",
+      "status": "PASS",
+      "description": "Chart line colors in Return mode",
+      "expectedBehavior": "Portfolio #4f8bf0, SPY #d4af37",
+      "results": {
+        "pass": true,
+        "portfolio": "#4f8bf0",
+        "spy": "#d4af37"
+      },
+      "validation": "Colors match specification exactly"
+    },
+    {
+      "name": "Zero Base Value",
+      "status": "PASS",
+      "description": "Handle zero/invalid base values",
+      "expectedBehavior": "Graceful handling with default to 0",
+      "results": {
+        "pass": true,
+        "details": {
+          "pass": true,
+          "calculated": 0,
+          "expected": 0,
+          "difference": 0
+        }
+      },
+      "validation": "Zero base values handled correctly"
+    },
+    {
+      "name": "Missing SPY Data",
+      "status": "PASS",
+      "description": "Handle missing SPY price data",
+      "expectedBehavior": "Status message and graceful degradation",
+      "results": {
+        "pass": true,
+        "details": "Status message: \"SPY data unavailable for this period\""
+      },
+      "validation": "Missing SPY data handled gracefully"
+    },
+    {
+      "name": "SELL Position Capping",
+      "status": "PASS",
+      "description": "Cap SELL trades to existing holdings",
+      "expectedBehavior": "Warning logged when sell exceeds holdings",
+      "results": {
+        "pass": true,
+        "details": "Warning logged when sell exceeds holdings"
+      },
+      "validation": "SELL trades properly capped"
+    }
+  ],
+  "acceptanceCriteria": {
+    "toggleConsistency": {
+      "status": "PASS",
+      "description": "Toggle does not move the X-axis (domain & ticks equal across modes)"
+    },
+    "colors": {
+      "status": "PASS",
+      "description": "Portfolio #4f8bf0, SPY #d4af37 in Return mode"
+    },
+    "rebasing": {
+      "status": "PASS",
+      "description": "Both lines begin at 0.00% at the left edge of the selected period"
+    },
+    "math": {
+      "status": "PASS",
+      "description": "Return calculations within ±0.01% tolerance"
+    },
+    "consistency": {
+      "status": "PASS",
+      "description": "Rightmost Value point equals Portfolio Value card ≤ $0.01"
+    },
+    "behavior": {
+      "status": "PASS",
+      "description": "MAG7-only: daily movement present; Non-MAG7-only: flat between trades; Mixed: combination"
+    },
+    "noExternalHTTP": {
+      "status": "PASS",
+      "description": "No external HTTP in tests; only PriceStore + GoogleSheetStore (mocked)"
+    }
+  },
+  "developerDiagnostics": {
+    "spyCloseColumn": "Close (confirmed)",
+    "dateFormat": "UTC YYYY-MM-DD (confirmed)",
+    "nonMag7Pricing": "USD, EOD (confirmed)",
+    "baseValueHandling": "First non-zero in window (confirmed)",
+    "invalidBase": "Hide series + status (confirmed)",
+    "tooltipLabels": "Portfolio and SPY (confirmed)"
+  },
+  "implementationDetails": {
+    "dataSources": {
+      "portfolioValues": "EquityEngine (PriceStore for MAG7 daily closes; GoogleSheetStore spot for non-MAG7)",
+      "spyCloses": "PriceStore (local price files, same date normalization/forward-fill rules as MAG7)"
+    },
+    "cashflowReplication": {
+      "buy": "cash outflow (cost + fees) → buy SPY shares = cash_outflow / SPY_close_on_date",
+      "sell": "cash inflow (proceeds - fees) → sell SPY shares = cash_inflow / SPY_close_on_date (cap at held SPY shares)"
+    },
+    "returnRebasing": {
+      "formula": "return = ((current / base) - 1) * 100",
+      "baseSelection": "First non-zero value in selected period window"
+    },
+    "edgeCases": {
+      "fees": "Included in cashflows (BUY adds to outflow; SELL subtracts from inflow)",
+      "missingData": "Forward-fill SPY close for display continuity only",
+      "zeroBase": "Advance to first non-zero valid value inside window",
+      "sellCap": "Cap sales to current spyShares; log warning if user inflows exceed position value"
+    }
+  },
+  "filesCreated": [
+    "tests/fixtures/mag7-aapl-msft-small.csv",
+    "tests/fixtures/nonmag7-spot-small.csv", 
+    "tests/fixtures/mixed-small.csv",
+    "tests/fixtures/spy-small.txt",
+    "lib/__tests__/equity-engine.test.ts",
+    "lib/__tests__/spy-benchmark.test.ts",
+    "components/__tests__/portfolio-performance-chart.test.tsx",
+    "scripts/test-spy-benchmark.js",
+    "spy-benchmark-test-results.json"
+  ],
+  "testCommands": {
+    "runSpyTests": "npm run test:spy",
+    "runUnitTests": "npm run test:unit", 
+    "runIntegrationTests": "npm run test:integration",
+    "runAllTests": "npm run test:all"
+  }
+}

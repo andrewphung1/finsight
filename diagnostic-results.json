@@ -1,0 +1,75 @@
+{
+  "part1_2": {
+    "activePortfolioId": "import_2024_01_15_123456",
+    "portfolios": [
+      "demo",
+      "import_2024_01_15_123456"
+    ],
+    "status": "PASS"
+  },
+  "part1_5": {
+    "seriesPoints": 195,
+    "domain": "2024-01-15 → 2025-08-24",
+    "samplePoints": [
+      {
+        "date": "2024-01-15",
+        "value": 15009.99
+      },
+      {
+        "date": "2024-03-15",
+        "value": 45009.99
+      },
+      {
+        "date": "2024-05-15",
+        "value": 65009.99
+      },
+      {
+        "date": "2024-07-15",
+        "value": 75009.99
+      },
+      {
+        "date": "2025-08-24",
+        "value": 85009.99
+      }
+    ],
+    "status": "PASS"
+  },
+  "part2_1M": {
+    "expectedWindow": [
+      "2025-07-25",
+      "2025-08-24"
+    ],
+    "actualWindow": [
+      "2025-07-25",
+      "2025-08-24"
+    ],
+    "points": 31,
+    "labels": [
+      "Jul 25",
+      "Jul 30",
+      "Aug 4",
+      "Aug 9",
+      "Aug 14",
+      "Aug 19"
+    ],
+    "status": "PASS"
+  },
+  "part3": {
+    "PortfolioPerformanceChart": {
+      "portfolioId": "import_2024_01_15_123456",
+      "dataLength": 195,
+      "source": "import"
+    },
+    "AssetAllocationChart": {
+      "portfolioId": "import_2024_01_15_123456",
+      "dataLength": 4,
+      "source": "import"
+    },
+    "HoldingsPerformanceChart": {
+      "portfolioId": "import_2024_01_15_123456",
+      "dataLength": 4,
+      "source": "import"
+    },
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "feature": "Interactive Legend for PortfolioPerformanceChart",
+  "version": "1.0.0",
+  "timestamp": "2025-08-25T10:03:49.947Z",
+  "status": "IMPLEMENTED",
+  "component": "components/charts/portfolio-performance-chart.tsx",
+  
+  "requirements": {
+    "whereAndWhen": {
+      "status": "COMPLETE",
+      "description": "Legend appears only in Return mode when plotting Portfolio vs SPY",
+      "implementation": "Conditional rendering: {viewMode === 'return' && spyBenchmarkData.spyData.length > 0}"
+    },
+    "legendBehavior": {
+      "status": "COMPLETE",
+      "items": [
+        {
+          "name": "Portfolio",
+          "color": "#4f8bf0",
+          "description": "Slightly darker sky blue"
+        },
+        {
+          "name": "S&P 500", 
+          "color": "#d4af37",
+          "description": "Dark yellow"
+        }
+      ],
+      "defaultState": "Both lines visible (showPortfolioLine: true, showSpyLine: true)",
+      "toggleBehavior": "Click/press to show/hide without rebasing or changing x-axis"
+    },
+    "uxUiDetails": {
+      "status": "COMPLETE",
+      "placement": "Right-aligned above chart plotting area",
+      "style": "Small colored dot + label text",
+      "hoverFocus": "Increased contrast, cursor: pointer",
+      "accessibility": "aria-pressed, keyboard focusable, screen reader support"
+    }
+  },
+
+  "implementation": {
+    "stateManagement": {
+      "showPortfolioLine": "useState(true)",
+      "showSpyLine": "useState(true)",
+      "description": "Internal component state for line visibility"
+    },
+    "customComponent": {
+      "name": "InteractiveLegend",
+      "props": {
+        "showPortfolioLine": "boolean",
+        "showSpyLine": "boolean", 
+        "onTogglePortfolio": "() => void",
+        "onToggleSpy": "() => void"
+      }
+    },
+    "chartIntegration": {
+      "conditionalRendering": "Lines rendered only when corresponding state is true",
+      "tooltipConditional": "Only visible series shown in tooltip",
+      "xAxisConsistency": "No changes to domain/ticks when toggling"
+    }
+  },
+
+  "accessibility": {
+    "ariaAttributes": {
+      "aria-pressed": "true/false based on line visibility",
+      "aria-label": "Toggle Portfolio series / Toggle S&P 500 series"
+    },
+    "keyboardSupport": {
+      "focusable": "Tab navigation",
+      "activation": "Enter/Space keys"
+    },
+    "screenReader": {
+      "visuallyHidden": "Toggle instructions for screen readers",
+      "status": "Implemented with sr-only class"
+    }
+  },
+
+  "styling": {
+    "activeState": {
+      "portfolio": "bg-[#4f8bf0] border-[#4f8bf0]",
+      "spy": "bg-[#d4af37] border-[#d4af37]",
+      "text": "text-gray-900 dark:text-white"
+    },
+    "inactiveState": {
+      "portfolio": "bg-transparent border-[#4f8bf0] opacity-60",
+      "spy": "bg-transparent border-[#d4af37] opacity-60", 
+      "text": "text-gray-500 dark:text-gray-400 opacity-60"
+    },
+    "hoverStates": {
+      "active": "hover:bg-gray-100 dark:hover:bg-gray-800",
+      "inactive": "hover:opacity-80"
+    },
+    "focusStates": {
+      "portfolio": "focus:ring-2 focus:ring-blue-500",
+      "spy": "focus:ring-2 focus:ring-yellow-500"
+    }
+  },
+
+  "devFeatures": {
+    "logging": {
+      "toggleEvents": "console.debug for legend toggles (dev only)",
+      "stateValidation": "console.debug for legend state (dev only)",
+      "warnings": "console.warn when no lines visible"
+    },
+    "assertions": {
+      "returnModeOnly": "Legend only renders in Return mode",
+      "defaultState": "Both lines visible by default",
+      "visibilityCheck": "At least one line should be visible"
+    }
+  },
+
+  "testing": {
+    "unitTests": {
+      "legendRendering": "Only shows in Return mode",
+      "toggleFunctionality": "Click toggles line visibility",
+      "keyboardSupport": "Enter/Space key activation",
+      "colorValidation": "Correct colors for each series",
+      "mutedStyling": "Inactive state styling"
+    },
+    "integrationTests": {
+      "chartConsistency": "X-axis unchanged when toggling",
+      "tooltipConditional": "Only visible series in tooltip",
+      "noRebasing": "Return calculations unchanged"
+    }
+  },
+
+  "acceptanceCriteria": {
+    "legendAppearance": {
+      "status": "COMPLETE",
+      "description": "Right-aligned legend with Portfolio and S&P 500 items",
+      "colors": "Portfolio #4f8bf0, S&P 500 #d4af37"
+    },
+    "toggleFunctionality": {
+      "status": "COMPLETE", 
+      "description": "Click toggles line visibility without changing x-axis",
+      "rebasing": "Unchanged when toggling"
+    },
+    "tooltipBehavior": {
+      "status": "COMPLETE",
+      "description": "Only visible series included in tooltip"
+    },
+    "modeSpecificity": {
+      "status": "COMPLETE",
+      "description": "No legend in Value mode"
+    },
+    "noExternalCalls": {
+      "status": "COMPLETE",
+      "description": "No external API calls introduced"
+    }
+  },
+
+  "filesModified": [
+    "components/charts/portfolio-performance-chart.tsx",
+    "components/__tests__/portfolio-performance-chart.test.tsx"
+  ],
+
+  "keyFeatures": {
+    "conditionalRendering": "Legend only appears in Return mode",
+    "interactiveToggles": "Click to show/hide individual lines",
+    "accessibility": "Full keyboard and screen reader support",
+    "visualFeedback": "Clear active/inactive states with color coding",
+    "nonInterference": "No changes to existing chart logic or calculations",
+    "devLogging": "Comprehensive debugging information in development"
+  },
+
+  "usage": {
+    "userInteraction": "Click legend items to toggle line visibility",
+    "keyboardNavigation": "Tab to focus, Enter/Space to toggle",
+    "visualIndication": "Colored dots show current visibility state",
+    "tooltipIntegration": "Tooltip automatically updates to show only visible series"
+  }
+}

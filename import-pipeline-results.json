@@ -1,0 +1,179 @@
+{
+  "timestamp": "2025-08-24T22:50:12.808Z",
+  "testCSV": "Date,Ticker,Quantity,Price,Fees,Type\n2024-01-15,AAPL,100,150.00,9.99,BUY\n2024-02-20,MSFT,50,300.00,9.99,BUY\n2024-03-10,GOOGL,25,140.00,9.99,BUY\n2024-04-15,AAPL,-30,160.00,9.99,SELL\n2024-05-20,TSLA,75,200.00,9.99,BUY\n2024-06-10,MSFT,25,320.00,9.99,BUY\n2024-07-15,GOOGL,-10,145.00,9.99,SELL",
+  "transactions": [
+    {
+      "date": "2024-01-15",
+      "ticker": "AAPL",
+      "quantity": 100,
+      "price": 150,
+      "fees": 9.99,
+      "type": "BUY",
+      "normalizedTicker": "AAPL",
+      "totalCost": 15009.99
+    },
+    {
+      "date": "2024-02-20",
+      "ticker": "MSFT",
+      "quantity": 50,
+      "price": 300,
+      "fees": 9.99,
+      "type": "BUY",
+      "normalizedTicker": "MSFT",
+      "totalCost": 15009.99
+    },
+    {
+      "date": "2024-03-10",
+      "ticker": "GOOGL",
+      "quantity": 25,
+      "price": 140,
+      "fees": 9.99,
+      "type": "BUY",
+      "normalizedTicker": "GOOGL",
+      "totalCost": 3509.99
+    },
+    {
+      "date": "2024-04-15",
+      "ticker": "AAPL",
+      "quantity": -30,
+      "price": 160,
+      "fees": 9.99,
+      "type": "SELL",
+      "normalizedTicker": "AAPL",
+      "totalCost": 4809.99
+    },
+    {
+      "date": "2024-05-20",
+      "ticker": "TSLA",
+      "quantity": 75,
+      "price": 200,
+      "fees": 9.99,
+      "type": "BUY",
+      "normalizedTicker": "TSLA",
+      "totalCost": 15009.99
+    },
+    {
+      "date": "2024-06-10",
+      "ticker": "MSFT",
+      "quantity": 25,
+      "price": 320,
+      "fees": 9.99,
+      "type": "BUY",
+      "normalizedTicker": "MSFT",
+      "totalCost": 8009.99
+    },
+    {
+      "date": "2024-07-15",
+      "ticker": "GOOGL",
+      "quantity": -10,
+      "price": 145,
+      "fees": 9.99,
+      "type": "SELL",
+      "normalizedTicker": "GOOGL",
+      "totalCost": 1459.99
+    }
+  ],
+  "portfolioId": "import_1756075812802_glpf8w5yo",
+  "holdings": [
+    {
+      "ticker": "AAPL",
+      "shares": 70,
+      "costBasis": 10506.993,
+      "marketValue": 10500,
+      "unrealizedGain": -6.993000000000393,
+      "unrealizedGainPercent": -0.06655567392117225,
+      "realizedGain": 306.9930000000004,
+      "lastPrice": 150
+    },
+    {
+      "ticker": "MSFT",
+      "shares": 75,
+      "costBasis": 23019.98,
+      "marketValue": 11250,
+      "unrealizedGain": -11769.98,
+      "unrealizedGainPercent": -51.12941019062571,
+      "realizedGain": 0,
+      "lastPrice": 150
+    },
+    {
+      "ticker": "GOOGL",
+      "shares": 15,
+      "costBasis": 2105.9939999999997,
+      "marketValue": 2250,
+      "unrealizedGain": 144.0060000000003,
+      "unrealizedGainPercent": 6.837911219120298,
+      "realizedGain": 55.99400000000014,
+      "lastPrice": 150
+    },
+    {
+      "ticker": "TSLA",
+      "shares": 75,
+      "costBasis": 15009.99,
+      "marketValue": 11250,
+      "unrealizedGain": -3759.99,
+      "unrealizedGainPercent": -25.049916755440876,
+      "realizedGain": 0,
+      "lastPrice": 150
+    }
+  ],
+  "totalValue": 35250,
+  "ranges": [
+    {
+      "range": "1M",
+      "expectedWindow": [
+        "2025-07-25",
+        "2025-08-24"
+      ],
+      "points": 31
+    },
+    {
+      "range": "3M",
+      "expectedWindow": [
+        "2025-05-26",
+        "2025-08-24"
+      ],
+      "points": 31
+    },
+    {
+      "range": "6M",
+      "expectedWindow": [
+        "2025-02-25",
+        "2025-08-24"
+      ],
+      "points": 31
+    },
+    {
+      "range": "1Y",
+      "expectedWindow": [
+        "2024-08-24",
+        "2025-08-24"
+      ],
+      "points": 31
+    },
+    {
+      "range": "2Y",
+      "expectedWindow": [
+        "2023-08-25",
+        "2025-08-24"
+      ],
+      "points": 31
+    },
+    {
+      "range": "5Y",
+      "expectedWindow": [
+        "2020-08-25",
+        "2025-08-24"
+      ],
+      "points": 31
+    },
+    {
+      "range": "All",
+      "expectedWindow": [
+        "2024-01-15",
+        "2025-08-24"
+      ],
+      "points": 31
+    }
+  ],
+  "status": "PASS"
+}

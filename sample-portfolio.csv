@@ -1,0 +1,11 @@
+ticker,type,date,quantity,price,fees,notes
+AAPL,BUY,2023-01-15,100,150.25,9.99,Initial position
+GOOGL,BUY,2023-02-20,50,140.50,9.99,Google position
+MSFT,BUY,2023-03-10,75,280.75,9.99,Microsoft position
+AAPL,SELL,2023-06-15,25,175.50,9.99,Partial profit taking
+GOOGL,DIVIDEND,2023-07-01,0,2.50,0,Quarterly dividend
+MSFT,BUY,2023-08-15,25,320.25,9.99,Additional shares
+AAPL,SPLIT,2023-09-01,100,0,0,4:1 stock split
+TSLA,BUY,2023-10-01,20,245.30,9.99,New position
+NVDA,BUY,2023-11-15,15,485.90,9.99,AI chip position
+META,BUY,2023-12-01,30,320.45,9.99,Social media position
