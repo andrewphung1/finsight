@@ -1,15 +1,13 @@
 "use client"
 
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 import { TrendingUp, TrendingDown, DollarSign, Users, Activity, Target } from "lucide-react"
+import { useState, useEffect } from 'react'
+import { AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 
 const mockData = [
   { month: "Jan", revenue: 4000, users: 2400, growth: 12 },
