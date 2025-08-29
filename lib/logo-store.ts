@@ -24,7 +24,8 @@ export function getLogoPath(ticker: string): string {
   const normalized = normalizeTicker(ticker)
   
   if (hasLogo(normalized)) {
-    return `/logos/${normalized}.svg`
+    // Use lowercase filename to match actual files in public/logos directory
+    return `/logos/${normalized.toLowerCase()}.svg`
   }
   
   return '/logos/default.svg'
